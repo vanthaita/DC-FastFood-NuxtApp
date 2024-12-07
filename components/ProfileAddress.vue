@@ -1,6 +1,6 @@
 <template>
   <div class="address-container p-6 bg-gray-100 rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800">Your Addresses</h2>
+    <h2 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Your Addresses</h2>
     <div class="address-form mb-6">
       <form @submit.prevent="saveAddress">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

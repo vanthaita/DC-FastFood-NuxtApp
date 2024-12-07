@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col p-8">
-    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Previous Orders</h2>
+    <h2 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Previous Orders</h2>
     <div v-if="previousOrders.length" class="bg-white p-6 shadow rounded-lg">
       <table class="min-w-full bg-white">
         <thead>

@@ -1,6 +1,6 @@
 <template>
   <div class="profile-form w-3/4 p-6 bg-white shadow-lg rounded-lg">
-    <h2 class="text-3xl font-bold mb-8 text-gray-800">Account Details</h2>
+    <h2 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Account Details</h2>
     <form @submit.prevent="updateProfile">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>

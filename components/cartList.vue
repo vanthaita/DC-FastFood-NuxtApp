@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col bg-gray-100 p-8">
     <main class="flex-grow container mx-auto mt-4 flex flex-col space-y-6">
       <div class="flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-gray-800">Your Shopping Cart</h1>
+        <h1 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Your Shopping Cart</h1>
       </div>
       <div v-if="cartItems && cartItems.length" class="bg-white p-6 shadow rounded">
         <table class="min-w-full bg-white">

@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col p-2">
     <main class="flex-grow container mx-auto mt-8">
       <div class="w-full h-full mx-auto bg-white p-6 shadow-lg rounded-lg">
-        <h2 class="text-2xl font-bold mb-6 text-center text-red-600">Book a Party</h2>
+        <h2 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Book a Party</h2>
         <div class="flex w-full gap-2 justify-between">
           <div class="mb-6 w-1/2 ml-6 justify-center items-center">
             <iframe 
@@ -16,7 +16,7 @@
           <div class="w-1/2">
             <form @submit.prevent="submitForm">
               <div class="mb-4">
-                <label for="name" class="block text-gray-700">Name</label>
+                <label for="name" class="block text-sm font-bold text-gray-500">Name :</label>
                 <input 
                   type="text" 
                   id="name" 
@@ -27,7 +27,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="email" class="block text-gray-700">Email</label>
+                <label for="email" class="block text-sm font-bold text-gray-500">Email :</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -38,7 +38,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="phone" class="block text-gray-700">Phone Number</label>
+                <label for="phone" class="block text-sm font-bold text-gray-500">Phone Number :</label>
                 <input 
                   type="tel" 
                   id="phone" 
@@ -49,7 +49,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="date" class="block text-gray-700">Party Date</label>
+                <label for="date" class="block text-sm font-bold text-gray-500">Party Date :</label>
                 <input 
                   type="date" 
                   id="date" 
@@ -59,7 +59,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="time" class="block text-gray-700">Party Time</label>
+                <label for="time" class="block text-sm font-bold text-gray-500">Party Time :</label>
                 <input 
                   type="time" 
                   id="time" 
@@ -69,7 +69,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="guests" class="block text-gray-700">Number of Guests</label>
+                <label for="guests" class="block text-sm font-bold text-gray-500">Number of Guests :</label>
                 <input 
                   type="number" 
                   id="guests" 
@@ -81,7 +81,7 @@
                 />
               </div>
               <div class="mb-4">
-                <label for="requests" class="block text-gray-700">Additional Requests</label>
+                <label for="requests" class="block text-sm font-bold text-gray-500">Additional Requests :</label>
                 <textarea 
                   id="requests" 
                   v-model="form.requests" 
