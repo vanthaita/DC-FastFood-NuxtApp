@@ -14,6 +14,7 @@
           <HeaderItem title="Home" link="/" :activeLink="currentPath" />
           <HeaderItem title="Booking A Party" link="/booking" :activeLink="currentPath" />
           <HeaderItem title="Find DC Store" link="/findkfc" :activeLink="currentPath" />
+          <HeaderItem title="Feedback" link="/feedback" :activeLink="currentPath" />
         </nav>
       </div>
 
@@ -102,6 +103,7 @@ const navItems = [
   { name: 'Booking a party', link: '/booking', icon: 'fas fa-calendar-alt fa-lg' },
   { name: 'Find DC store', link: '/findkfc', icon: 'fas fa-map-marker-alt fa-lg' },
   { name: 'Your Profile', link: '/profile/detail', icon: 'fas fa-user fa-lg' },
+  { name: 'Feedback', link: '/feedback', icon: 'fas fa-comment-dots fa-lg' },
   { name: 'Log In', link: '/signIn', icon: 'fas fa-sign-in-alt fa-lg' },
 ];
 const currentPath = computed(() => route.path);
@@ -112,7 +114,6 @@ const toggleSidebar = () => {
 </script>
 
 <style scoped>
-/* Custom Styles */
 .header-logo img {
   transition: transform 0.3s ease;
 }

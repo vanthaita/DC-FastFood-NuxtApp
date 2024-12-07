@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col bg-gray-100 p-8">
     <main class="flex-grow container mx-auto mt-4 flex flex-col space-y-6">
       <div class="flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-gray-800">Your Shopping Cart</h1>
+        <h1 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Your Shopping Cart</h1>
       </div>
       <div v-if="cartItems && cartItems.length" class="bg-white p-6 shadow rounded">
         <table class="min-w-full bg-white">
@@ -21,7 +21,7 @@
             <tr v-for="item in cartItems" :key="item.id" class="border-t">
               <td class="py-2 text-left">{{ item.name }}</td>
               <td class="py-2 flex items-center justify-center">
-                <button @click="decreaseQuantity(item.id)" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-l">-</button>
+                <button @click="decreaseQuantity(item.id)" class="bg-gray-300 text-gray-700 text-xl font-bold px-2 py-1 rounded-l hover:bg-red-400">-</button>
                 <input
                   type="number"
                   v-model.number="item.quantity"
@@ -29,7 +29,7 @@
                   class="w-16 p-2 border-t border-b border-gray-300 rounded-none text-center"
                   @change="updateQuantity(item.id, item.quantity)"
                 />
-                <button @click="increaseQuantity(item.id)" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-r">+</button>
+                <button @click="increaseQuantity(item.id)" class="bg-gray-300 text-gray-700 text-xl font-bold px-2 py-1 rounded-r hover:bg-green-400">+</button>
               </td>
               <td class="py-2 text-right">{{ item.deliveryOption.name }}</td>
               <td class="py-2 text-right">${{ item.deliveryOption.cost.toFixed(2) }}</td>

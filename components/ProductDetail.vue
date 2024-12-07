@@ -10,9 +10,9 @@
             <div class="mt-4">
               <div class="flex flex-row">
                 <label for="quantity" class="block text-xl font-semibold mr-4">Quantity</label>
-                <button @click="decreaseQuantity" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-l">-</button>
+                <button @click="decreaseQuantity" class="bg-gray-300 text-gray-700 text-xl font-bold px-2 py-1 rounded-l hover:bg-red-400">-</button>
                 <input v-model.number="quantity" type="number" id="quantity" min="1" class="border rounded w-16 text-center" />
-                <button @click="increaseQuantity" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-r">+</button>
+                <button @click="increaseQuantity" class="bg-gray-300 text-gray-700 text-xl font-bold px-2 py-1 rounded-r hover:bg-green-400">+</button>
               </div>
               <label for="delivery" class="block text-lg font-semibold mt-4">Delivery Option</label>
               <select v-model="selectedDelivery" id="delivery" class="border p-2 rounded w-3/5">

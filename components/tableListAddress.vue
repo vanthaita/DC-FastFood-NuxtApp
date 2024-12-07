@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white p-6 shadow-lg rounded-lg mt-6">
-    <h3 class="text-xl font-bold text-center mb-4 text-red-600">DC Locations in HCM</h3>
+    <h3 class="text-4xl text-center font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">DC Locations in HCM</h3>
     <ul>
       <li
         v-for="(location, index) in kfcLocations"
@@ -8,7 +8,7 @@
         class="mb-4 p-4 border-b border-gray-300 cursor-pointer hover:bg-gray-100 rounded-lg"
         @click="selectAddress(location)"
       >
-        <h4 class="font-semibold text-lg text-gray-800">{{ location.name }}</h4>
+        <h4 class="font-semibold text-lg text-red-400">{{ location.name }}</h4>
         <p class="text-gray-600">{{ location.address }}</p>
       </li>
     </ul>
